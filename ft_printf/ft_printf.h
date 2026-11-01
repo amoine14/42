@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: axel <axel@student.42.fr>                  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/11/01 15:39:29 by username          #+#    #+#             */
-/*   Updated: 2026/11/01 15:45:58 by axel             ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_printf.h                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/11/01 15:39:29 by username         #+#    #+#              */
+/*   Updated: 2026/11/01 16:09:49 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef struct s_format
 	char	specifier;
 }	t_format;
 
-int	ft_printf(const char *format, ...);
+int			ft_printf(const char *format, ...);
+t_format	ft_define_format(const char *str);
 
 #endif
