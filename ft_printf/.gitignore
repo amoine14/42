@@ -1,0 +1,24 @@
+# Compiled object files
+*.o
+
+# Static libraries
+*.a
+
+# Executables
+*.out
+a.out
+test_printf
+test_base
+
+# Dependency files
+*.d
+
+# Debugging files
+*.log
+vgcore.*
+
+# Editor and temporary files
+*.swp
+*.swo
+*~
+.vscode/
