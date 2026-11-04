@@ -21,4 +21,8 @@ vgcore.*
 *.swp
 *.swo
 *~
+
+.mode_mandatory
+.mode_bonus
+
 .vscode/

@@ -6,9 +6,11 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/03 15:05:19 by username         #+#    #+#              */
-/*   Updated: 2026/11/03 15:10:01 by username        ###   ########.fr        */
+/*   Updated: 2026/11/04 00:09:49 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf_bonus.h"
 
 int	ft_write_padding(int count, char character)
 {

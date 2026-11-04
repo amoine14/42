@@ -6,7 +6,7 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/11/03 15:10:31 by username         #+#    #+#              */
-/*   Updated: 2026/11/03 16:10:28 by username        ###   ########.fr        */
+/*   Updated: 2026/11/04 01:28:15 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,12 @@ int	ft_format_string(const char *chaine, t_printf_format *format)
 	int	max_len;
 
 	if (!chaine)
-		chaine = "(null)";
+	{
+		if (format->precision_specified && format->precision < 6)
+			chaine = "";
+		else
+			chaine = "(null)";
+	}
 	max_len = (int) ft_strlen(chaine);
 	if (format->precision_specified && format->precision < max_len)
 		max_len = format->precision;
